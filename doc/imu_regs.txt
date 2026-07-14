@@ -1,0 +1,19 @@
+0x02
+SIGNAL_PATH_RESET
+Triggers a software reset of the sensor during initialization
+
+0x1F
+PWR_MGMT0
+Enables the sensors by switching the gyroscope and accelerometer into Low Noise (LN) mode
+
+0x20
+GYRO_CONFIG0
+Sets the gyroscope's full-scale range (e.g., ±250 dps) and its output data rate (e.g., 100 Hz)
+
+0x21
+ACCEL_CONFIG0
+Sets the accelerometer's full-scale range (e.g., ±2g) and its output data rate (e.g., 100 Hz)
+
+0x0B
+ACCEL_DATA_X1
+The starting point for reading 12 bytes of raw motion data, covering all X, Y, and Z axes for both accelerometer and gyroscope
